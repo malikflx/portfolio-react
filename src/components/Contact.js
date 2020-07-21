@@ -22,7 +22,7 @@ class Contact extends React.Component{
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success'){
-        alert("Message Sent."); 
+        alert("Your message has been received! I'll be in touch with you shortly."); 
         this.resetForm()
       }else if(response.data.status === 'fail'){
         alert("Message failed to send.")
@@ -59,8 +59,9 @@ class Contact extends React.Component{
   	</form>
     </div>
   	</section>
-    <Footer/>
+      <Footer/>
     </>
+    
 	);
   }
 

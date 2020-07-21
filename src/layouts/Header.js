@@ -41,8 +41,11 @@ class Header extends React.Component {
       <nav className="nav">
         <ul className="nav-list">
           <li className="nav-item"><Link onClick={() => {this.handleLink();  this.handleUpdate(); }}className="landingLink" to="/">Home</Link></li>
+          <hr />
           <li className="nav-item"><Link onClick={() => {this.handleLink();  this.handleUpdate(); }}className="landingLink" to="/about">About</Link></li>
+          <hr />
           <li className="nav-item"><Link onClick={this.handleLink} className="landingLink" to="/projects">Projects</Link></li>
+          <hr />
           <li className="nav-item"><Link onClick={this.handleLink} className="landingLink" to="/contact">Contact</Link></li>
         </ul>
       </nav>

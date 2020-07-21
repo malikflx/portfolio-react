@@ -38,13 +38,13 @@ class About extends React.Component {
         <section id="about">
           <div className="full-width">
           <div className="intro small">
-            <h1>A Little Bit About Me...</h1>
+            <h1 className="subtitle-main">A Little Bit About Me...</h1>
             <h3 className="greeting_subtitle-about">Developer & Designer based in the NYC Metropolitan area</h3>
             <p>Born in Brooklyn, NY and currently residing in Norwalk, CT, I'm a husband as well as a father of a beautiful young girl. I've been in IT for almost 8 years in the IT Service Management/Infrastructre space. See, here's the thing...I'm not your average tech guy. I didn't grow up wanting to do anything with technology outside of using it. I didn't want to build things, design websites, create logos, support enterprise technologhy infrastructure, or choose technology as a career profession. Now, I do all of those things. By day, I help a New York PR firm keep their technology infrastructure going without a hitch. By night, I design and develop websites for small businesses and organizations. While I do know some back-end technologies, I focus on the front-end to leave your webpages beautiful, clean, and enticing.</p>
           </div>
           <div className="full-width">
             <section className="skills">
-              <h1>Skills</h1>
+              <h1 className="subtitle-main">Skills</h1>
               <h3 className="greeting_subtitle-about subtitle-right">Just a few things I could do for you...</h3>
               <div className="blurb">
               <div className="third-width">
@@ -67,7 +67,7 @@ class About extends React.Component {
           </div>
           <div className="full-width">
             <section className="hobbies">
-              <h1>Hobbies</h1>
+              <h1 className="subtitle-main">Hobbies</h1>
               <h3 className="greeting_subtitle-about">I'm not all work, I like to have a little fun too!</h3>
               <div className="blurb">
               <div className="third-width">
