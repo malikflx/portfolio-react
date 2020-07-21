@@ -743,8 +743,8 @@ Contact Styles
 .contact-form-space {
   /* padding: 0px 25% 0 25%;  */
   padding-top: 10%;
-  /* padding-left: 33%; */
-  /* padding-right: 33%; */
+  padding-left: 33%;
+  padding-right: 33%;
   margin-top: 100px;
   width: 100%;
   opacity: 0;
