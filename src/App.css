@@ -64,9 +64,9 @@
    outline: none;
  }
 
-  /******************
+/******************
 Typography
- ******************/
+******************/
 
  h1, h2, h3 {
    line-height: 1;
@@ -277,7 +277,7 @@ Typography
 
  .main-nav-item {
    list-style: none;
-   font-size: 20px;
+   font-size: .5rem;
    margin: 0 15px;
  }
 
@@ -316,7 +316,7 @@ Typography
   }
 
   .headerLink {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 
 }
@@ -335,13 +335,13 @@ Typography
 
 .hero h1 {
   font-weight: 600;
-  font-size: 70px;
-  margin-bottom: 15px
+  font-size: 4rem;
+  margin-bottom: 15px;
 }
 
 .hero h3 {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 
@@ -497,7 +497,7 @@ About Styles
 
   .greeting_subtitle-about {
     text-align: center;
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .skills h1, .skills .subtitle-right{
@@ -528,6 +528,9 @@ About Styles
 .section_title-services {
   color: var(--clr-light);
   position: relative;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .section_title-services::after {
@@ -540,10 +543,14 @@ About Styles
   opacity: 0.25;
 }
 
+.section_subtitle-service {
+  margin-bottom: .5em;
+}
+
 @media (min-width: 1200px) {
   .services {
     display: flex;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -562,7 +569,7 @@ About Styles
   }
 
   .service + .service {
-    margin-left: 2em;
+    margin-left: 5em;
   }
 }
 
@@ -757,7 +764,7 @@ input[type=text],input[type=email], select, textarea {
   outline: 0;
   border-width: 0 0 1px;
   border-color: var(--clr-dark);
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 0px;
   box-sizing: border-box;
   margin-top: 6px;

@@ -16,22 +16,22 @@ class About extends React.Component {
         </div>
 
         <section id="services" className="my-services">
-          <h2 className="greeting_title section_title-services">Services</h2>
+          <h2 className="greeting_title section_title-services">I Specialize In</h2>
           <div className="services">
             <div className="service">
-              <h3>Development & Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien nec. Mauris sit amet massa vitae tortor condimentum. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. </p>
+              <h3 className="section_subtitle-service">Web Development</h3>
+              <p>I started working on the web several years ago. Since then, I've been creating clean and beautiful content for the web. I'm skilled in HTML, CSS, JavaScript, and I also have experience with frameworks like ReactJS and NodeJS. I'm constantly learning web technologies and other design related topics.</p>
             </div>
 
             <div className="service">
-              <h3>Graphic Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien nec. Mauris sit amet massa vitae tortor condimentum. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.  </p>
+              <h3 className="section_subtitle-service">Web Design</h3>
+              <p>I also design websites! I'm well versed in CSS3 & SASS and work from a "Mobile First" approach using Responsive Web Design strategies. I've also worked with Bootstrap and other Responsive Design framworks like Materialize CSS.</p>
             </div>
 
-            <div className="service">
+            {/* <div className="service">
               <h3>Wordpress</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien nec. Mauris sit amet massa vitae tortor condimentum. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.  </p>
-            </div>
+            </div> */}
 
           </div>
         </section>
@@ -45,7 +45,7 @@ class About extends React.Component {
           <div className="full-width">
             <section className="skills">
               <h1 className="subtitle-main">Skills</h1>
-              <h3 className="greeting_subtitle-about subtitle-right">Just a few things I could do for you...</h3>
+              <h3 className="greeting_subtitle-about subtitle-right">Just a few things I could provide for you...</h3>
               <div className="blurb">
               <div className="third-width">
                 <i className="fa fa-html5 fa-5x" aria-hidden="true"></i>
