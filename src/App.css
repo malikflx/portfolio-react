@@ -545,6 +545,18 @@ About Styles
 
 .section_subtitle-service {
   margin-bottom: .5em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section_subtitle-service::after {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 1px;
+  margin: 0.5em auto 0.5em;
+  background: var(--clr-light);
+  opacity: 0.25;
 }
 
 @media (min-width: 1200px) {
@@ -577,6 +589,17 @@ About Styles
   padding-left: 15%;
   padding-right: 15%;
   line-height: 2;
+}
+
+.about-me::after {
+  content: '';
+  display: block;
+  width: 9em;
+  height: 1px;
+  margin: 0.5em auto 0.5em;
+  margin-top: 2em;
+  background: var(--clr-dark);
+  opacity: 0.25;
 }
 
 /* #about h1 {
