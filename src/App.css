@@ -868,7 +868,7 @@ Footer
   align-items: center;
   color: var(--clr-light);
   background-color: var(--clr-dark);
-  height: 100px;
+  height: 8em;
   bottom: 0;
 }
 
@@ -876,6 +876,25 @@ Footer
   color: var(--clr-light);
 }
 
+.social {
+  display: flex;
+  margin-left: 1em;
+}
+
+.social-link {
+  width: 3em;
+}
+
+@media (max-width: 600px) {
+  .main-footer {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+  .social {
+    justify-content: center;
+  }
+}
 
 /*********************
 Breakpoints
