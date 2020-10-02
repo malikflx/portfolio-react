@@ -507,6 +507,10 @@ About Styles
   .subtitle-main {
     margin-bottom: 10px;
   }
+
+  .section_title-services {
+    font-size: 2em;
+  }
 }
 .my-services {
   line-height: 2;
