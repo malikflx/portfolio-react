@@ -359,8 +359,6 @@ Typography
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .2s ease-out;
-  /* background-color: #33A8FF; */
-  /* color: #FFF; */
   opacity: 1;
 }
 
@@ -606,14 +604,6 @@ About Styles
   opacity: 0.25;
 }
 
-/* #about h1 {
-  font-size: 30px;
-}
-
-#about h3 {
-  font-size: 20px;
-} */
-
 section .greeting, .services, .skills, .hobbies {
   padding: 0;
 }
@@ -762,23 +752,41 @@ Contact Styles
 
 #contact-main {
   min-height: 91vh;
-}
-#contact {
-  /* padding-top: 50px; */
-  /* justify-content: center; */
-  position: relative;
-  z-index: 0;
+  height: 100%;
 }
 
 #contact-main h1 {
   text-align: center;
 }
 
-.contact-form-space {
-  /* padding: 0px 25% 0 25%;  */
+.contact-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-photo-box {
+  position: relative;
+  right: 5em;
+  bottom: 1em;
+  height: 80%;
+  width: 60%;
+  max-width: 900px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.form-box {
+  justify-content: center;
   padding-top: 10%;
-  padding-left: 33%;
-  padding-right: 33%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 80%;
+  
+}
+
+.contact-form-space {
+  height: 100%;
+  display: flex;
   margin-top: 100px;
   width: 100%;
   opacity: 0;
@@ -804,8 +812,6 @@ input[type=text]:focus ,input[type=email]:focus, select:focus, textarea:focus {
   border-bottom-width: 2px;
 }
 
-
-
 input[type=submit] {
   background-color: var(--clr-dark);
   color: var(--clr-dark);
@@ -813,53 +819,96 @@ input[type=submit] {
   border-style: solid;
   border-color: var(--clr-dark);
   border-radius: 4px;
-  width: 100px;
+  width: 100%;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 2em;
   background: linear-gradient(to right, var(--clr-dark) 50%, #FFF 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .2s ease-out;
 }
+
 input[type=submit]:hover {
   background-position: left bottom;
   border-color: var(--clr-dark);
   color: var(--clr-light);
 }
 
-@media (max-width: 1200px) {
-  #contact-main {
-    min-height: 88vh;
+.label-name {
+  line-height: 2;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+
+  .contact-photo-box {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
   }
-  
+
   .contact-form-space {
-    padding-top: 15%;
-    padding-left: 0%;
-    padding-right: 0%;
+    position: relative;
+    top: 8em;
+    height: 20vh;
+  }
+
+  .form-box {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact-photo {
+    border-radius: 1em;
+  }
+
+  .contact-title {
+    font-size: 50px;
+    margin-bottom: 1em;
   }
 }
 
+@media (min-width: 700px) {
+  .form-box {
+    position: relative;
+    bottom: 4em;
+  }
+}
 
 @media (max-width: 600px) {
+  .contact-photo {
+    display: none;
+  }
+
+  .form-box {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .contact-photo-box {
+    display: none;
+  }
+
   #contact-main {
     height: 50vh;
-    padding-top: 25%;
-    padding-bottom: 0;
-    margin-bottom: 50px;
-  }
-
-  #contact {
-    padding-top: 40px;
-  }
-
-  #contact h1 {
-    font-size: 2em;
-  }
-
-  .contact-form-space {
-    padding: 50px 0px 0px 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 3em;
   }
 }
+
+@media (max-height: 700px) {
+  #contact-main {
+    margin-bottom: 6em;
+  }
+}
+
 /*********************
 Footer
 *********************/ 
@@ -996,10 +1045,7 @@ Animations
     left: 200px;
     top: 0px;
   }
-  /* 75% {
-    left: 100px;
-    top: -100;
-  } */
+
   100% {
     top: 0;
     left: 0;

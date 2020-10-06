@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
+import MalikContact from '../img/Malik-headshot-contact.jpg';
 
 class Contact extends React.Component{
   
@@ -41,22 +42,29 @@ class Contact extends React.Component{
     <Header />
   	<section id="contact-main">
     <div className="contact-form-space">
-    <h1>Contact Me</h1>
-  	<form id="contact" onSubmit={this.handleSubmit.bind(this)} method="POST">
-  	<div className="form-group">
-      	<label htmlFor="name">Name</label>
+    <div className="contact-photo-box">
+      <img className="contact-photo" src={ MalikContact } alt="malik-headshot"/> 
+    </div>
+    <div className="form-box">
+      <h1 className="contact-title">Contact</h1>
+      <form id="contact" onSubmit={this.handleSubmit.bind(this)} method="POST">
+  	  <div className="form-group">
+      	<label className="label-name" htmlFor="name">Name</label>
       	<input type="text" className="form-control" id="name" value={this.state.name} placeholder="Full name..." onChange={this.onNameChange.bind(this)} />
-  	</div>
-  	<div className="form-group">
-      	<label htmlFor="exampleInputEmail1">Email Address</label>
+  	  </div>
+  	  <div className="form-group">
+      	<label className="label-name" htmlFor="exampleInputEmail1">Email Address</label>
       	<input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} placeholder="Your Email..." onChange={this.onEmailChange.bind(this)} />
-  	</div>
-  	<div className="form-group">
-      	<label htmlFor="message">Message</label>
+  	  </div>
+  	  <div className="form-group">
+      	<label className="label-name" htmlFor="message">Message</label>
       	<textarea className="form-control" rows="1" id="message" value={this.state.message} placeholder="Write your message here..." onChange={this.onMessageChange.bind(this)} />
-  	</div>
-  	<input type="submit" className="btn btn-primary" value="Submit"/>
-  	</form>
+  	  </div>
+  	  <input type="submit" className="btn btn-primary" value="Submit"/>
+  	  </form>
+    </div>
+    
+  	
     </div>
   	</section>
       <Footer/>
