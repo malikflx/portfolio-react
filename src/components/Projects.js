@@ -11,14 +11,15 @@ class Projects extends React.Component {
       <>
         <Header />
         <section className="projects">
-          <a href="http://memorygame.malikfelix.com" target="_blank" rel="noopener noreferrer">
+          <h1 className="projects-title">Projects</h1>
+          <a className="project-container"href="http://memorygame.malikfelix.com" target="_blank" rel="noopener noreferrer">
             <img className="card-image" src={ MemoryGame } alt="memorygame"/>
             <div className="project-description">
               <h4><b>Memory Game</b></h4>
               <p>VanillaJS/DOM Manipulation</p>
             </div>
             </a>
-          <a href="http://simplechat.malikfelix.com" target="_blank" rel="noopener noreferrer">
+          <a className="project-container" href="http://simplechat.malikfelix.com" target="_blank" rel="noopener noreferrer">
             <img className="card-image" src={ SimpleChat } alt="simplechat"/>
             <div className="project-description">
               <h4><b>Simple Chat</b></h4>

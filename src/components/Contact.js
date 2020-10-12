@@ -32,7 +32,6 @@ class Contact extends React.Component{
   }
 
   resetForm(){
-    
      this.setState({name: '', email: '', message: ''})
   }
   
@@ -46,7 +45,7 @@ class Contact extends React.Component{
       <img className="contact-photo" src={ MalikContact } alt="malik-headshot"/> 
     </div>
     <div className="form-box">
-      <h1 className="contact-title">Contact</h1>
+      <h1 className="contact-title">Talk to Me</h1>
       <form id="contact" onSubmit={this.handleSubmit.bind(this)} method="POST">
   	  <div className="form-group">
       	<label className="label-name" htmlFor="name">Name</label>
@@ -87,48 +86,3 @@ class Contact extends React.Component{
 }
 
 export default Contact;
-
-
-
-
-// class Contact extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       fname: '',
-//       lname: '',
-//       email: '',
-//       message: '',
-//       mailSent: false,
-//       error: null
-//     }
-//   }
-
-//   handleFormSubmit( event ) {
-//     event.preventDefault();
-//     console.log(this.state);
-//   }
-
-//   render() {
-//     return (
-//       <>
-//       <Header />
-//       <section id="contact">
-//         <form action="mailto:malikfelix50@gmail.com" method="get" encType="text/plain">
-//           <label>First Name</label>
-//           <input type="text"id="fname"name="firstname"placeholder="Your name.." value={this.state.fname} onChange={e => this.setState({ fname: e.target.value })}/>
-//           <label>Last Name</label>
-//           <input type="text"id="lname" name="lastname" placeholder="Your last name.." value={this.state.lname} onChange={e => this.setState({ lname: e.target.value })}/>
-//           <label>Email</label>
-//           <input type="email"id="email"name="email"placeholder="Your email" value={this.state.email} onChange={e => this.setState({ email: e.target.value })}/>
-//           <label>Message</label>
-//           <textarea id="message"name="subject"placeholder="Write something.." onChange={e => this.setState({ message: e.target.value })} value={this.state.message}></textarea>
-//           <input type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit"/>
-//         </form>
-//       </section>
-//       </>
-//     );
-//   }
-// };
-
-// export default Contact;

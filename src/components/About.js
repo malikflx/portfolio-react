@@ -28,11 +28,6 @@ class About extends React.Component {
               <p>I also design websites! I'm well versed in CSS3 & SASS and work from a "Mobile First" approach using Responsive Web Design strategies. I've also worked with Bootstrap and other Responsive Design framworks like Materialize CSS.</p>
             </div>
 
-            {/* <div className="service">
-              <h3>Wordpress</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien nec. Mauris sit amet massa vitae tortor condimentum. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.  </p>
-            </div> */}
-
           </div>
         </section>
         <section id="about">

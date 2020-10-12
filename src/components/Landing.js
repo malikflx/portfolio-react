@@ -16,7 +16,6 @@ class Landing extends React.Component {
             <Link className="bttn" to="/about">Get To Know Me</Link>
             <Link className="bttn" to="/contact">Contact Me</Link>
             <div className="circle"></div>
-            {/* <div className="square"></div> */}
           </div>
           
         </section>

@@ -21,8 +21,6 @@
 
    --clr-light: #FFF;
    --clr-dark: #202020;
-   /* --clr-accent: #000000; */
-   /* --clr-accent: #FF6767; */
 
    --fs-h1: 3rem;
    --fs-h2: 2.25rem;
@@ -47,7 +45,6 @@
    display: block;
    max-width: 100%;
  }
-
 
  section {
    display: flex;
@@ -148,7 +145,6 @@ Typography
 
  .nav-toggle {
    padding: .5em;
-   /* padding: 35px 50px 35px; */
    background: transparent;
    border:0;
    cursor: pointer;
@@ -203,23 +199,6 @@ Typography
 
  .hamburger::before { top: 6px; }
  .hamburger::after { bottom: 6px; }
-
-
- /* .landingLink {
-   text-decoration: none;
-   opacity: 0.75;
-   color: #000;
- } */
-/* 
- header nav {
-   display: flex;
-   margin-right: -15px;
- }
-
- header nav li {
-   margin: 0 15px;
-   font-size: 20px;
- } */
 
  .logo {
    max-width: 400px;
@@ -705,11 +684,9 @@ Projects Styles
 .temporary {
   justify-content: center;
   text-align: center;
-  /* min-height: 91vh; */
   position: relative;
   bottom: 6em;
   z-index: -1;
-  /* margin-top: 100px; */
 }
 
 .bounce {
@@ -722,7 +699,6 @@ Projects Styles
 .line-break {
  display: flex;
  margin: 0 auto;
-  /* width: 100%; */
 }
 
  .rotate-square + .rotate-square {
@@ -748,7 +724,27 @@ Projects Styles
 @media (max-width: 1400px) {
   .card-image {
     width: 100%;
-    min-height: 400px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    display: block;
+    padding-top: 20%;
+  }
+
+  .projects-title {
+    text-align: center;
+  }
+  .card-image {
+    filter: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-image {
+    min-height: 0px;
   }
 }
 
@@ -761,11 +757,18 @@ Projects Styles
 @media (max-width: 500px) {
   .projects {
     flex-direction: column;
+  }
+
+  .project-container {
     width: 100%;
   }
 
   .project-description {
     font-size: 14px;
+  }
+
+  .card-image {
+    min-height: 0px;
   }
 }
 
@@ -960,6 +963,12 @@ input[type=submit]:hover {
   }
 }
 
+@media (min-width: 1500px) {
+  .form-group {
+    margin-bottom: 3em;
+  }
+}
+
 /*********************
 Footer
 *********************/ 
@@ -1116,63 +1125,9 @@ Animations
     left: 200px;
     top: 0px;
   }
-  /* 75% {
-    left: 100px;
-    top: -100;
-  } */
+
   100% {
     top: 0;
     left: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

@@ -53,27 +53,5 @@ class Header extends React.Component {
     );
   }
 };
-// const Header = () => (
-
-//     <header>
-//       <div className="logo">
-//         <div>
-//         <h2><Link className="headerLink" to="/">Malik Felix | Web Developer</Link></h2>
-//         </div>
-//       </div>
-//       <button className="nav-toggle" aria-label="activate navigation">
-//         <span className="hamburger"></span>
-//       </button>
-//       <nav className="nav">
-//         <ul className="nav-list">
-//           <li className="nav-item"><Link className="landingLink" to="/">Home</Link></li>
-//           <li className="nav-item"><Link className="landingLink" to="/about">About</Link></li>
-//           <li className="nav-item"><Link className="landingLink" to="/projects">Projects</Link></li>
-//           <li className="nav-item"><Link className="landingLink" to="/contact">Contact</Link></li>
-//         </ul>
-//       </nav>
-//     </header>
-  
-// );
 
 export default Header;

@@ -5,7 +5,7 @@ var cors = require('cors');
 const creds = require('./config');
 
 var transport = {
-    host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
+    host: 'smtp.gmail.com', 
     port: 587,
     auth: {
     user: creds.USER,
@@ -31,7 +31,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: 'malikfelix50@gmail.com',  // Change to email address that you want to receive messages on
+    to: 'malikfelix50@gmail.com', 
     subject: 'New Message From Contact Form on Portfolio Site',
     text: content
   }
