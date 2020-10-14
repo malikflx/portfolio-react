@@ -5,22 +5,22 @@ import MemoryGame from '../img/memory-game.png';
 import SimpleChat from '../img/simple-chat.png';
 
 class Projects extends React.Component {
- 
+
   render() {
     return (
       <>
         <Header />
         <section className="projects">
           <h1 className="projects-title">Projects</h1>
-          <a className="project-container"href="http://memorygame.malikfelix.com" target="_blank" rel="noopener noreferrer">
-            <img className="card-image" src={ MemoryGame } alt="memorygame"/>
+          <a className="project-container" href="http://memorygame.malikfelix.com" target="_blank" rel="noopener noreferrer">
+            <img className="card-image" src={MemoryGame} alt="memorygame" />
             <div className="project-description">
               <h4><b>Memory Game</b></h4>
               <p>VanillaJS/DOM Manipulation</p>
             </div>
-            </a>
+          </a>
           <a className="project-container" href="http://simplechat.malikfelix.com" target="_blank" rel="noopener noreferrer">
-            <img className="card-image" src={ SimpleChat } alt="simplechat"/>
+            <img className="card-image" src={SimpleChat} alt="simplechat" />
             <div className="project-description">
               <h4><b>Simple Chat</b></h4>
               <p>VanillaJS/Socket.io</p>
@@ -37,7 +37,7 @@ class Projects extends React.Component {
             <h3>More projects will be posted soon!</h3>
           </div>
         </section>
-        <Footer/>
+        <Footer />
       </>
     )
   }

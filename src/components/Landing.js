@@ -17,9 +17,9 @@ class Landing extends React.Component {
             <Link className="bttn" to="/contact">Contact Me</Link>
             <div className="circle"></div>
           </div>
-          
+
         </section>
-        <Footer/>
+        <Footer />
       </>
     );
   }
